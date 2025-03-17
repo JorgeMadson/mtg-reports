@@ -1,6 +1,8 @@
-from flask import render_template, request, redirect, url_for
-from app import app, db
-from app.models import Event, Location, Player, Deck, Report
+from flask import Flask, render_template, request, redirect, url_for
+from simplao_model import db, Event, Location, Player, Deck, Report
+
+app = Flask(__name__)
+app.run(debug=True)
 
 @app.route('/')
 def index():
