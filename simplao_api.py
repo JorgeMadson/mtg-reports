@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from simplao_model import db, Event, Location, Player, Deck, Report
 
 app = Flask(__name__)
+# essa linha que faz o servidor "ouvir" e ficar ligado
 app.run(debug=True)
 
 @app.route('/')
